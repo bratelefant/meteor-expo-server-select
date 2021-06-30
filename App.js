@@ -15,9 +15,13 @@ export default function App() {
   const Stack = createStackNavigator();
 
   const setUrl = (value) => {
-    console.log("Changed Meteor server URL to" + value);
-    setUrlValue(value);
-    Meteor.connect(value);
+    if (url != value){
+      console.log("Disconnect from Meteor server " + url)
+      Meteor.disconnect()
+      console.log("Changed Meteor server URL to" + value);
+      setUrlValue(value);
+      Meteor.connect(value);
+    }
   };
 
   const userSettings = {

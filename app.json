@@ -3,7 +3,7 @@
     "name": "meteor-expo-server-select",
     "slug": "meteor-expo-server-select",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -18,14 +18,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.metroexposerverselect.local"
+      "bundleIdentifier": "com.christianwahle.meteorexposerverselect"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.metroexposerverselect.local"
+      "package": "com.christianwahle.meteorexposerverselect"
     },
     "web": {
       "favicon": "./assets/favicon.png"
